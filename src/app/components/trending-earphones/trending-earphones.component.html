@@ -1,0 +1,18 @@
+<section class="trending-earphones">
+  <div class="section-header">
+    <h2>Trending Earphones</h2>
+    <div class="tabs">
+      <button class="tab active">Earbuds</button>
+      <button class="tab">Wireless</button>
+      <button class="tab">Wired</button>
+    </div>
+  </div>
+  <div class="products-list">
+    <app-product-card [product]="{ name: 'Boat Rockerz 333', price: 20, image: 'assets/rockerz333.png', reviews: 75, discount: 60, bgClass: 'bg-blue' }"></app-product-card>
+    <app-product-card [product]="{ name: 'Boat kerz 234', price: 40, image: 'assets/boat_kerz_234.png', reviews: 75, discount: 0, bgClass: 'bg-green' }"></app-product-card>
+    <app-product-card [product]="{ name: 'Boat Rockerz 323', price: 30, image: 'assets/rockerz323.png', reviews: 75, discount: 40, bgClass: 'bg-purple' }"></app-product-card>
+    <div class="arrow-right">
+      <svg width="36" height="36" viewBox="0 0 36 36" fill="none"><circle cx="18" cy="18" r="18" fill="#19c37d"/><path d="M15 12l6 6-6 6" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </div>
+  </div>
+</section>

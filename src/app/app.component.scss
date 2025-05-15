@@ -1,0 +1,15 @@
+.main-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 16px;
+  display: block;
+  box-sizing: border-box;
+}
+
+// Убираем лишние вертикальные и горизонтальные отступы между секциями
+.main-container > * {
+  margin: 0 !important;
+  padding: 0 !important;
+  gap: 0 !important;
+  box-sizing: border-box;
+}

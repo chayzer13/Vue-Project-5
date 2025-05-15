@@ -1,0 +1,17 @@
+<div class="product-card-outer" [ngClass]="product.bgClass">
+  <div class="product-card">
+    <div class="discount-badge" *ngIf="product.discount">Save {{ product.discount }}%</div>
+    <img [src]="product.image" [alt]="product.name" />
+    <div class="product-info">
+      <h3>{{ product.name }}</h3>
+      <div class="price-rating">
+        <span class="price">${{ product.price }}</span>
+        <span class="stars">
+          <span class="star" *ngFor="let s of [1,2,3,4,5]">★</span>
+          <span class="reviews">{{ product.reviews }} Reviews</span>
+        </span>
+      </div>
+    </div>
+    <button class="add-to-cart">Add to cart</button>
+  </div>
+</div>

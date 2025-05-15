@@ -1,0 +1,184 @@
+.featured-products {
+  background: #8b5cf6;
+  border-radius: 0;
+  padding: 0;
+  margin: 0;
+  min-height: 420px;
+  box-shadow: none;
+  position: relative;
+  color: #fff;
+  border: 2px solid #fff;
+  width: 100vw;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  box-sizing: border-box;
+
+  .featured-products__container {
+    max-width: 1200px;
+    margin: 30px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .featured-bg {
+    flex: 1 1 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: relative;
+    .outline-title {
+      position: relative;
+      top: 36px;
+      left: 36px;
+      font-size: 3.2rem;
+      font-weight: 700;
+      color: transparent;
+      -webkit-text-stroke: 2px #fff;
+      text-stroke: 2px #fff;
+      opacity: 0.5;
+      letter-spacing: 1px;
+      z-index: 1;
+      pointer-events: none;
+      user-select: none;
+      font-family: 'Montserrat', 'Inter', Arial, sans-serif;
+      margin-bottom: 0;
+    }
+    .featured-items {
+      display: flex;
+      gap: 36px;
+      margin-bottom: 0;
+      margin-top: 48px;
+      z-index: 2;
+      align-items: flex-start;
+      .featured-img.left, .featured-img.right, .featured-img.center {
+        background: #fff;
+        border-radius: 100px / 50%;
+        width: 120px;
+        height: 220px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+        overflow: hidden;
+        margin-top: 60px;
+      }
+      .featured-img.center {
+        box-shadow: 0 2px 16px rgba(0,0,0,0.10);
+        margin-bottom: 0;
+        margin-top: 0;
+        z-index: 2;
+      }
+    }
+    .featured-price {
+      font-size: 1.4rem;
+      font-weight: 500;
+      color: #fff;
+      margin-left: 24px;
+      margin-top: 32px;
+      font-family: 'Montserrat', 'Inter', Arial, sans-serif;
+      span {
+        color: #fff;
+        font-weight: 700;
+        font-size: 2rem;
+        margin-left: 8px;
+        font-family: 'Montserrat', 'Inter', Arial, sans-serif;
+      }
+    }
+  }
+
+  .featured-content {
+    flex: 1 1 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding-left: 0;
+    h2 {
+      font-size: 2.2rem;
+      font-weight: 700;
+      margin-bottom: 18px;
+      color: #fff;
+      font-family: 'Montserrat', 'Inter', Arial, sans-serif;
+    }
+    p {
+      color: #fff;
+      font-size: 1.1rem;
+      margin-bottom: 32px;
+      font-family: 'Montserrat', 'Inter', Arial, sans-serif;
+    }
+    .featured-actions {
+      display: flex;
+      gap: 24px;
+      align-items: center;
+      .add-to-cart {
+        background: #19c37d;
+        color: #fff;
+        border: none;
+        border-radius: 10px;
+        padding: 18px 54px;
+        font-size: 1.25rem;
+        font-weight: 700;
+        cursor: pointer;
+        transition: background 0.2s;
+        font-family: 'Montserrat', 'Inter', Arial, sans-serif;
+        box-shadow: 0 8px 32px rgba(25,195,125,0.13);
+        &:hover {
+          background: #13a06b;
+        }
+      }
+      .view-more {
+        background: transparent;
+        color: #fff;
+        border: none;
+        border-radius: 10px;
+        padding: 0 0;
+        font-size: 1.25rem;
+        font-weight: 700;
+        cursor: pointer;
+        font-family: 'Montserrat', 'Inter', Arial, sans-serif;
+        box-shadow: none;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+
+  .img-wrapper {
+    width: 120px;
+    height: 220px;
+    border-radius: 100px / 50%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+  }
+  .img-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 100px / 50%;
+    display: block;
+  }
+
+  @media (max-width: 900px) {
+    flex-direction: column;
+    padding: 20px 8px;
+    .featured-bg, .featured-content {
+      flex: 1 1 100%;
+      width: 100%;
+      align-items: center;
+      padding-left: 0;
+    }
+    .featured-content {
+      margin-top: 18px;
+    }
+  }
+}

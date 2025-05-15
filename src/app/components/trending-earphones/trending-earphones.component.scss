@@ -1,0 +1,81 @@
+.trending-earphones {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 16px;
+  box-sizing: border-box;
+  text-align: center;
+
+  .section-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 18px;
+    gap: 24px;
+    h2 {
+      font-size: 1.6rem;
+      font-weight: 800;
+      color: #222;
+      margin: 0;
+      letter-spacing: -1px;
+    }
+    .tabs {
+      display: flex;
+      gap: 10px;
+      .tab {
+        background: transparent;
+        color: #222;
+        border: none;
+        border-radius: 24px;
+        padding: 7px 24px;
+        font-size: 1rem;
+        font-weight: 700;
+        cursor: pointer;
+        transition: background 0.2s, color 0.2s;
+        &.active {
+          background: #19c37d;
+          color: #fff;
+        }
+        &:hover:not(.active) {
+          background: #e8f5ee;
+        }
+      }
+    }
+  }
+
+  .products-list {
+    display: flex;
+    gap: 32px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    .arrow-right {
+      margin-left: 8px;
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      svg {
+        transition: box-shadow 0.2s;
+        box-shadow: none;
+      }
+      &:hover svg circle {
+        filter: brightness(0.9);
+      }
+    }
+  }
+
+  @media (max-width: 900px) {
+    .products-list {
+      flex-direction: column;
+      gap: 16px;
+      align-items: center;
+    }
+    .section-header {
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+    }
+  }
+}

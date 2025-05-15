@@ -1,0 +1,33 @@
+.new-launches {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 16px;
+  box-sizing: border-box;
+  text-align: center;
+
+  h2 {
+    font-size: 1.7rem;
+    font-weight: 700;
+    color: #222;
+    margin-bottom: 18px;
+    text-align: center;
+  }
+
+  .products-list {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    margin: 0;
+    padding: 0;
+  }
+
+  @media (max-width: 900px) {
+    .products-list {
+      flex-direction: column;
+      gap: 12px;
+      align-items: center;
+    }
+  }
+}
